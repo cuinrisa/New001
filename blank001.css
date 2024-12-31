@@ -1,0 +1,89 @@
+
+
+
+/*網頁歸零*/
+html,body,div{
+	          padding: 0; /*邊距距離*/
+			  margin: 0; /*邊界距離*/
+			  border: 0; /*框線*/
+              }
+
+/*前方div id="aabbcc"套用*/
+#aabbcc{  /*id套用需用 # */
+	    width: 100%; /*寬度*/
+		height: 1024px; /*高度*/
+		display: flex; /*顯示層級宣告-區塊*/
+		flex-direction: row; /*從左而右*/
+		flex-wrap: wrap; /*允許多行配置*/
+        }
+/*頁首彈性容器div外觀設定*/		
+header{
+	   width:100%; /*寬度*/
+	   height:20%; /*高度*/
+	   background-color: pink; /*背景顏色-粉紅*/
+       }
+/*頁首彈性容器div外觀設定*/
+.qwe{  /*class="qwe"的套用*/
+	 display: flex; /*顯示層級宣告-區塊*/
+	 flex-direction: row; /*從左而右*/
+	 flex-wrap: wrap; /*允許多行配置*/
+	 justify-content: center; /*水平設置-置中對齊*/
+     }	
+.asd{
+	 display: flex; /*顯示層級宣告-區塊*/
+	 flex-direction: row; /*從左而右*/
+	 flex-wrap: wrap; /*允許多行配置*/
+	 border: 1px dotted red; /*框線-紅色*/
+	 margin:5px; /*外部距離*/
+	 width: 400px; /*寬度*/
+	 justify-content: center; /*主軸水平-置中對齊*/
+	 align-items: flex-end /*交叉軸的垂直-靠下對齊*/
+     }
+div>div{
+	    width: 80px; /*寬度*/
+		height: 40px; /*高度*/
+		background-color: #eee; /*背景顏色-白色*/
+		border: 1px solid; /*框線*/
+		border-radius: 0.3em; /*框線半徑*/
+		text-align: center; /*文字對齊-置中*/
+        }	 
+/*左文設定*/	   
+nav{
+	width:20%; /*寬度*/
+	height:70%; /*高度*/
+	background: linear-gradient(to bottom,pink,lightgray); /*背景漸層效果-線性-粉紅-淺灰*/
+    }	   
+/*內文設定*/	   
+section{
+	    width:70%; /*寬度*/
+	    height:70%; /*高度*/
+	    background: linear-gradient(to bottom,pink,lightgray); /*背景漸層效果-線性-粉紅-淺灰-*/
+        }	   	   
+/*右文設定*/		
+aside{
+	  width:10%; /*寬度*/
+	  height:70%; /*高度*/
+	  background: linear-gradient(to bottom,pink,lightgray); /*背景漸層效果-線性-粉紅-淺灰-*/
+      }	
+/*頁尾設定*/
+footer{
+	   width:100%; /*寬度*/
+	   height:10%; /*高度*/
+	   background-color: lightgray; /*背景顏色-淺灰*/
+       }
+/*置中設定*/
+h2,h3{
+      text-align: center; /*文字對齊-置中*/
+      }	   
+/*圖片設定*/ 
+.zxc{  /*class="zxc"的套用*/
+	 position: fixed; /*位置-固定*/
+	 bottom: 20px; /*底部-20px*/
+	 right: 20px; /*右邊-20px*/
+	 border: blue 2px solid; /*框線-藍色-實線*/
+	 transition: 0.5s width ease-out 0.3s, 1s border ease-out 0.8s; /*需要跟hover搭配*/
+     }           /*播放時間 轉換屬性 轉換方法 延遲時間*/ /*必須按照順序*/
+	 .zxc:hover{  /*轉換效果*/
+		  width:300px; /*寬度*/
+		  border: green 3px dashed; /*框線-綠色-虛線*/
+	      }
